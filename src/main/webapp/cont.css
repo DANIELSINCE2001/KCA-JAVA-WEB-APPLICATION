@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior:smooth;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --bg-color:#f8f8ba;
+    --text-color:#C41E3A;
+    --main-color:#1E90FF;
+}
+html,body{
+    
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+body
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+h2{
+    font-size: 5rem;
+}
+
+
+
+.img{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+img
+{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius:50% ;
+    
+
+}
+.heading{
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    font-size: 7.5rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+h2{
+    font-size: 5rem;
+}
+
+.headdiv{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+
+.main{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h2{
+    font-size: 2rem;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.main-div{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.founder{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.founder h2{
+    display: flex;
+    justify-content: start;
+}
+
+
+
+
+
+.f-abt{
+    
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+
+.f-abt h2{
+    color: var(--text-color);
+}
+
+.f-abt h3{
+    color: blue;
+}
+
+.f-headers{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.home-sci{
+    position: relative;
+    height: 50px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+
+
+}
+
+.home-sci a{
+    position: relative;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:58px;
+    height:50px;
+    background: transparent;
+    border:.2rem solid var(--text-color);
+    border-radius:50%;
+    font-size: 30px;
+    color:var(--text-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover{
+    color: var(--text-color);
+}
+
+.home-sci a::before{
+    content :'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before{
+    width:100%;
+}
+
+.f-headers h3{
+    display: flex;
+    justify-content: center;
+}
+
+.adiv{
+    width: 100%;
+    position: relative;
+}
+
+a{
+   font-size: 2rem;
+   font-weight: 1000;
+   color: var(--text-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #D4F1F4;
+   border-radius: 20px;
+   border: 2px solid var(--main-color);
+}
+
+
+
+@media(max-width:1000px ){
+
+
+            img
+            {
+                position: relative;
+                height: 150px;
+                width: 150px;
+                border-radius:50% ;
+
+            }
+
+            .heading{
+                    display: flex;
+                    color: var(--text-color);
+                    align-items: center;
+                    font-size: 2rem;
+                }
+
+            .main h2{
+                font-size: 1.3rem;
+            }
+
+            .founder{
+                width: 50%;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+
+            }
+
+            .founder h2{
+                
+                width: 100%;
+                position: relative;
+                font-size: 0.55rem;
+                display: flex;
+                align-items: center;
+            }
+            .f-abt{
+                width: 50%;
+                height: 150px;
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .f-abt h2{
+                        font-size: 0.7rem;
+                        color: var(--text-color);
+                    }
+            .f-abt h3{
+                        color: blue;
+                        font-size: 0.55rem;
+                    }
+
+            .f-headers h3{
+                    display: flex;
+                    justify-content: center;
+                }
+            .f-headers h2{
+                    display: flex;
+                    justify-content: center;
+                }
+
+            .home-sci a{
+                font-size: 15px;
+                width:30px;
+                height:25px;
+            }
+
+
+}
+
+
+
+

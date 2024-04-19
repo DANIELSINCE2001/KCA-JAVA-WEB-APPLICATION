@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior:smooth;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --bg-color:#f8f8ba;
+    --text-color:#C41E3A;
+    --main-color:#1E90FF;
+}
+html,body{
+    
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+body
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+h2{
+    font-size: 5rem;
+}
+
+.headdiv{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.img{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+img
+{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius:50% ;
+
+}
+
+.imgborder{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border-top:10px double var(--text-color);
+    border-bottom:10px double var(--text-color);
+    border-left:10px double var(--main-color);
+    border-right:10px double var(--main-color);
+    animation: aboutSpinner 8s linear infinite;
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.heading{
+    display: flex;
+    color: var(--text-color);
+    align-items: center;
+    font-size: 7.5rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+
+.main{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main h2{
+    font-size: 2rem;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.main-div{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.founder{
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.founder img{
+    margin-left:45px ;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    border: 2px solid var(--main-color);
+}
+
+.founder h6{
+    border: 1px solid #FFBF00;
+    font-size: 0.8rem;
+    width: 83%;
+    border-radius: 1rem;
+    padding-left:1.1rem ;
+}
+
+.f-abt{
+    height: 300px;
+    width: 70%;
+    position: relative;
+    display: flex;
+     align-items: center;
+    
+}
+
+.f-abt h2{
+    color: var(--text-color);
+}
+
+.f-abt h3{
+    color: blue;
+}
+
+.f-headers{
+
+    height: 45%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.f-headers h3{
+    display: flex;
+    justify-content: center;
+}
+
+.adiv{
+    width: 100%;
+    position: relative;
+}
+
+a{
+    font-size: 2rem;
+   font-weight: 1000;
+   color: var(--text-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #D4F1F4;
+   border-radius: 20px;
+   border: 2px solid var(--main-color);
+}
+
+@media(max-width:1000px ){
+
+
+            img
+            {
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                border-radius:50% ;
+
+            }
+
+            .imgborder{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                border-top:10px double var(--text-color);
+                border-bottom:10px double var(--text-color);
+                border-left:10px double var(--main-color);
+                border-right:10px double var(--main-color);
+                animation: aboutSpinner 8s linear infinite;
+            }
+
+
+            .heading{
+                    display: flex;
+                    color: var(--text-color);
+                    align-items: center;
+                    font-size: 2rem;
+                }
+
+            .main h2{
+                font-size: 1.3rem;
+            }
+
+            .founder{
+                width: 45%;
+            }
+
+            .founder img{
+                    margin-left:5px ;
+                    position: relative;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 5%;
+                    border: 2px solid var(--main-color);
+                }
+
+            .founder h6{
+                position: relative;
+                border: 1px solid #FFBF00;
+                font-size: 0.5rem;
+                width: 100%;
+                border-radius: 1rem;
+                padding-left:1.1rem ;
+            }
+
+            .f-abt{
+                width: 55%;
+                height: 150px;
+            }
+
+            .f-abt h2{
+                        font-size: 0.7rem;
+                        color: var(--text-color);
+                    }
+            .f-abt h3{
+                        color: blue;
+                        font-size: 0.55rem;
+                    }
+
+            .f-headers h3{
+                    display: flex;
+                    justify-content: start;
+                }
+
+
+}
+
+
+
+
